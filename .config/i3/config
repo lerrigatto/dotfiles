@@ -30,7 +30,7 @@ font pango:DejaVu Sans Mono 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec x-terminal-emulator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -184,11 +184,8 @@ bindsym $mod+g exec "~/bin/gtd"
 # Make xmessage always floating
 for_window [class="Xmessage"] floating enable
 
-assign [class="Slack"] 9
-
 exec wicd-client --tray
 exec --no-startup-id i3-msg 'workspace 1; exec firefox; workspace 1'
-exec slack
 exec xfce4-power-manager
 
 
