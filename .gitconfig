@@ -1,6 +1,7 @@
 [user]
 	email = enrico.lacava@jobteaser.com
 	name = Enrico La Cava
+	signkey = A35197299CE47BB5BB5793592EA15D47539EC508
 [push]
 	default = current
 [core]
