@@ -18,12 +18,6 @@ set PATH $HOME/bin $PATH
 set PATH $HOME/.kubectx $PATH
 set -gx PATH $PATH $HOME/.krew/bin
 
-# Ansible shit
-set -gx ANSIBLE_ROLES_PATH /home/elacava/dev/jobteaser/stack-ansible/roles
-
-set fish_function_path $fish_function_path "/home/elacava/.local/lib/python3.7/site-packages/powerline/bindings/fish"
-powerline-setup
-
 # Enable SSH Agent
 fish_ssh_agent
 
