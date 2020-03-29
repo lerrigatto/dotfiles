@@ -1,0 +1,6 @@
+state.dump.json
+ansible.vault
+.idea/
+venv/
+.rakeTasks
+**.iml
