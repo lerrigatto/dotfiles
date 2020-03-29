@@ -185,7 +185,6 @@ bindsym $mod+g exec "~/bin/gtd"
 for_window [class="Xmessage"] floating enable
 
 exec wicd-client --tray
-exec --no-startup-id i3-msg 'workspace 1; exec firefox; workspace 1'
 exec xfce4-power-manager
 
 
