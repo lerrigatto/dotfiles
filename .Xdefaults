@@ -1,0 +1,2 @@
+!Set background
+exec --no-startup-id feh --bg-scale /usr/share/pixmaps/parmitano_1.jpg
