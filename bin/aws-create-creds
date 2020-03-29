@@ -1,0 +1,31 @@
+#! /bin/bash
+
+CREDS_SOURCE=$HOME/.aws/credentials_source
+CREDS_DEST=$HOME/.aws/credentials
+CREDS_TMP=$XDG_RUNTIME_DIR/credentials_aws
+
+BW_ITEM_ID=1ebac7ff-7a4c-4ad8-8731-aafa00b60ba1
+
+if [[ ! $(bw unlock --check) ]]; then
+  export BW_SESSION=$(bw unlock --raw)
+fi
+
+echo "Syncing Bitwarden Vault"
+if [[ ! $(bw sync) ]]; then
+  echo "Failed to sync Bitwarden. Abort"
+  exit 1
+fi
+
+echo "Getting AWS credentials from Bitwarden"
+AWS_KEY=$(bw get username ${BW_ITEM_ID})
+AWS_SECRET=$(bw get password ${BW_ITEM_ID})
+
+echo "Creating credentials file"
+sed -e "s/AWS_ACCESS_KEY_ID_PLACEHOLDER/${AWS_KEY}/g" \
+    -e "s/AWS_SECRET_ACCESS_KEY_PLACEHOLDER/${AWS_SECRET}/g" \
+    ${CREDS_SOURCE} > ${CREDS_TMP}
+
+if [[ ! -f "$CREDS_DEST" ]]; then
+  echo "Linking credentials file"
+  ln -s ${CREDS_TMP} ${CREDS_DEST}
+fi

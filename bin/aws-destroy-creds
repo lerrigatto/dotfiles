@@ -1,0 +1,15 @@
+#! /bin/bash
+
+CREDS_DEST=$HOME/.aws/credentials
+CREDS_TMP=$XDG_RUNTIME_DIR/credentials_aws
+
+echo "Remove temporary credentials file"
+rm -f ${CREDS_TMP}
+
+if [[ -L "$CREDS_DEST" ]]; then
+  echo "Remove credentials file symlink"
+  rm -f ${CREDS_DEST}
+else
+  echo "Credentials file is not a symlink!"
+fi
+

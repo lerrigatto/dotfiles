@@ -1,0 +1,18 @@
+#!/bin/bash
+
+POWERSUPPLY="/sys/class/power_supply/AC/online" # Check if power supply is online
+TOO_LOW=10 # Low battery threshold
+NOT_CHARGING="0"
+
+export DISPLAY=:0
+
+BATTERY_LEVEL=$(acpi -b | grep -P -o '[0-9]+(?=%)')
+STATUS=$(cat $POWERSUPPLY)
+
+if [ $BATTERY_LEVEL -le $TOO_LOW -a $STATUS = $NOT_CHARGING ]
+then
+    /usr/bin/xmessage -center -fn '*helvetica-bold-*240*' "[LOW BATTERY] Battery level is ${BATTERY_LEVEL}%!"
+fi
+
+exit 0
+
