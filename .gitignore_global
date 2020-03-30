@@ -1,3 +1,5 @@
+$HOME/bin/*
+$HOME/.aws/*
 state.dump.json
 ansible.vault
 .idea/
