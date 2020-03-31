@@ -18,6 +18,8 @@ set PATH $HOME/bin $PATH
 set PATH $HOME/.kubectx $PATH
 set -gx PATH $PATH $HOME/.krew/bin
 
+set -gx GPG_TTY (tty) 
+
 # Enable SSH Agent
 fish_ssh_agent
 

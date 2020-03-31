@@ -7,3 +7,6 @@
 [user]
 	name = Enrico <lerrigatto> La Cava
 	email = me@lerrigatto.com
+  signingkey = 9373D188631A7A1F
+[commit]
+	gpgsign = true
