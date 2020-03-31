@@ -1,14 +1,49 @@
 " Plugin manager
 syntax on
+
+set encoding=utf-8
+
 " filetype plugin indent on
 
-" Mess with tabs
-set tabstop=2       " Tab still it is a \t. It is just that
-                    " Vim will interpret it to be having
-                    " a width of 4.
-set shiftwidth=2    " Indents will have a width of 4
-set softtabstop=2   " Sets the number of columns for a TAB
-set expandtab       " Expand TABs to spaces
+" ***** Mess with tabs ****
 
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" How wide a tab (/t) is defined/displayed
+" 2 space tabs FTW
+set tabstop=2
+
+" Change the indents (>>/<<) accordingly
+set shiftwidth=2
+
+" How far the cursor move when you hit tab
+set softtabstop=2
+
+" Expand TABs to spaces of tabstop amount
+set expandtab
+
+" ******************************
+
+" show line numbers
+set number
+
+" autoindent
+set autoindent
+
+" show cursor
+set cursorline
+
+" highlight the other next parenthesis
+set showmatch
+
+" enable all python syntax highlights
+let python_highlight_all = 1
+
+" Customize .py formats for PIP8
+au BufNewFile,BufRead *.py
+  \ set tabstop=4 |
+  \ set softtabstop=4 |
+  \ set shiftwidth=4 |
+  \ set textwidth=79 |
+  \ set expandtab |
+  \ set autoindent |
+  \ set fileformat=unix 
 
