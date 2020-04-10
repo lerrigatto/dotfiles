@@ -2,6 +2,7 @@ set LC_ALL en_US.UTF-8
 
 # Ruby Stuff
 set PATH $HOME/.rbenv/bin $PATH
+status --is-interactive; and rbenv init - | source
 
 # Local bins (pip)
 set PATH $HOME/.local/bin $PATH
