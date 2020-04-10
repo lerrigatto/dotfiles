@@ -10,3 +10,9 @@
   signingkey = 9373D188631A7A1F
 [commit]
 	gpgsign = true
+[filesystem "Debian|11.0.6|/dev/mapper/pinkladydeb--VG-pinkladydeb--LV"]
+	timestampResolution = 11000 nanoseconds
+	minRacyThreshold = 6337 microseconds
+[filesystem "JetBrains s.r.o|11.0.6|/dev/mapper/pinkladydeb--VG-pinkladydeb--LV"]
+	timestampResolution = 11000 nanoseconds
+	minRacyThreshold = 7441 microseconds
