@@ -7,4 +7,5 @@ function aws-reset-role
   set -e AWS_SESSION_TOKEN 
   set -e AWS_SECURITY_TOKEN 
   set -e AWS_PROFILE
+  echo "Role cleared"
 end

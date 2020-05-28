@@ -6,3 +6,4 @@ ansible.vault
 venv/
 .rakeTasks
 **.iml
+*.swp

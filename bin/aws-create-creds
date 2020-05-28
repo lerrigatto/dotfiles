@@ -6,6 +6,11 @@ CREDS_TMP=$XDG_RUNTIME_DIR/credentials_aws
 
 BW_ITEM_ID=1ebac7ff-7a4c-4ad8-8731-aafa00b60ba1
 
+if [[ -f "$CREDS_DEST" ]]; then
+  echo "Credentials file exists. Goodbye"
+  exit 0
+fi
+
 if [[ ! $(bw unlock --check) ]]; then
   export BW_SESSION=$(bw unlock --raw)
 fi
