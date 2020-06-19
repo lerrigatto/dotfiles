@@ -180,6 +180,12 @@ bindsym $mod+g exec "~/bin/gtd"
 # If you need to pick an application, try with: 
 # xprop | grep CLASS
 
+# Move second monitor to top when plugged in
+exec --no-startup-id "~/.screenlayout/default.sh"
+
+# Assign workspaces
+workspace 1 output HDMI-1 
+workspace 9 output eDP-1
 
 # Make xmessage always floating
 for_window [class="Xmessage"] floating enable
@@ -195,6 +201,3 @@ bindsym --release Print exec "scrot ~/tmp/capture/$(date --iso-8601='seconds').p
 bindsym --release Mod1+Sys_Req exec "import -window `xwininfo | awk '/.*Window id:.*/ {print $4}'` ~/tmp/capture/$(date --iso-8601='seconds').png"
 # Selection screenshot
 bindsym --release Shift+Print exec "scrot ~/tmp/capture/$(date --iso-8601='seconds').png -s -e 'xclip -selection c -t image/png < $f'"
-
-# Move second monitor to top when plugged in
-bindsym XF86Display exec --no-startup-id ~/screenlayout/default.sh
