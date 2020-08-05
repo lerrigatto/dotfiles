@@ -192,7 +192,7 @@ for_window [class="Xmessage"] floating enable
 
 assign [class="Slack"] 9
 
-exec wicd-client --tray
+exec nm-applet --tray
 exec --no-startup-id i3-msg 'workspace 1; exec firefox; workspace 1'
 exec slack
 exec xfce4-power-manager
