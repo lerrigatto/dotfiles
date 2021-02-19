@@ -7,9 +7,8 @@
 [user]
 	name = Enrico <lerrigatto> La Cava
 	email = me@lerrigatto.com
-  signingkey = 9373D188631A7A1F
 [commit]
-	gpgsign = true
+	gpgsign = false
 [filesystem "Debian|11.0.6|/dev/mapper/pinkladydeb--VG-pinkladydeb--LV"]
 	timestampResolution = 11000 nanoseconds
 	minRacyThreshold = 6337 microseconds
