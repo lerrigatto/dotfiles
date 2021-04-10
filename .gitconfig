@@ -15,3 +15,5 @@
 [filesystem "JetBrains s.r.o|11.0.6|/dev/mapper/pinkladydeb--VG-pinkladydeb--LV"]
 	timestampResolution = 11000 nanoseconds
 	minRacyThreshold = 7441 microseconds
+[status]
+	submoduleSummary = true
