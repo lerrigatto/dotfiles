@@ -16,4 +16,6 @@
 	timestampResolution = 11000 nanoseconds
 	minRacyThreshold = 7441 microseconds
 [status]
-	submoduleSummary = true
+  submoduleSummary = true
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
