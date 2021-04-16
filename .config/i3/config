@@ -26,6 +26,10 @@ font pango:DejaVu Sans Mono 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+# The border madness
+default_border normal 5
+hide_edge_borders smart
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -187,15 +191,11 @@ bindsym $mod+g exec "~/bin/gtd"
 exec --no-startup-id "~/.screenlayout/default.sh"
 
 # Assign workspaces
-workspace 1 output HDMI-1 
-workspace 9 output eDP-1
+workspace 1 output HDMI-0 
+workspace 9 output DP-1
 
 # Make xmessage always floating
 for_window [class="Xmessage"] floating enable
-
-exec wicd-client --tray
-exec xfce4-power-manager
-
 
 # Screen captures
 # Desktop screenshot
