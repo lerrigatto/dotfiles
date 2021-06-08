@@ -36,5 +36,3 @@ URxvt*font: xft:dejavusansmono:size=11
 ! white
 *.color7:       #b7b8b9
 *.color15:      #fcfdfe
-
->>>>>>> Add Xdefaults with font and terminal color
