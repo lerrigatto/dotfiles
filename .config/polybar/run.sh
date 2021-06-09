@@ -6,8 +6,8 @@ killall -q polybar
 # polybar-msg cmd quit
 
 # Run on all the monitors
-#for monitor in $(polybar --list-monitors | cut -d":" -f1); do
+for monitor in $(polybar --list-monitors | cut -d":" -f1); do
   echo "---" | tee -a /tmp/polybar-bottom1.log
   MONITOR=$monitor polybar --reload bottom1 2>&1 | tee -a /tmp/polybar-bottom1.log & disown
-#done
+done
 echo "Bars launched..."
