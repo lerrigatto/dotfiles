@@ -38,7 +38,7 @@ alert = #bd2c40
 [bar/bottom1]
 monitor = ${env:MONITOR:HDMI-0}
 width = 100%
-height = 27
+height = 60
 offset-x = 0 
 offset-y = 0
 radius = 0
@@ -62,10 +62,10 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=18;1
-font-1 = unifont:fontformat=truetype:size=12:antialias=true;0
-font-2 = siji:scale=10;
-font-3 = NotoEmoji:scale=10;
+font-0 = fixed:pixelsize=60;2
+font-1 = unifont:fontformat=truetype:size=30:antialias=true;0
+font-2 = siji:scale=40;
+font-3 = NotoEmoji:scale=30;
 
 modules-left = i3
 ;modules-center =  
