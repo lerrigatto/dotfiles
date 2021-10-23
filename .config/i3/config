@@ -207,3 +207,6 @@ bindsym --release Print exec "scrot ~/tmp/capture/$(date --iso-8601='seconds').p
 bindsym --release Mod1+Sys_Req exec "import -window `xwininfo | awk '/.*Window id:.*/ {print $4}'` ~/tmp/capture/$(date --iso-8601='seconds').png"
 # Selection screenshot
 bindsym --release Shift+Print exec "scrot ~/tmp/capture/$(date --iso-8601='seconds').png -s -e 'xclip -selection c -t image/png < $f'"
+
+# Run network-manager at startup
+exec --no-startup-id nm-applet
