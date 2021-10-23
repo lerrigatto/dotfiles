@@ -24,4 +24,4 @@ fish_ssh_agent
 set -gx JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
 # Enable shell magic, must be last
-starship init fish | source
+# starship init fish | source
