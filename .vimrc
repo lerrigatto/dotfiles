@@ -20,7 +20,8 @@ Plugin 'elixir-editors/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+" fuck autoindent
+"filetype plugin indent on    " required
 
 
 
@@ -46,8 +47,11 @@ set expandtab
 " show line numbers
 set number
 
-" autoindent
-set autoindent
+" fuck autoindent
+set noautoindent
+set nosmartindent
+set nocindent
+
 
 " show cursor
 set cursorline
