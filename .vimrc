@@ -52,7 +52,6 @@ set noautoindent
 set nosmartindent
 set nocindent
 
-
 " show cursor
 set cursorline
 
