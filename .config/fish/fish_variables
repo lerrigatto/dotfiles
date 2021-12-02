@@ -801,6 +801,7 @@ SETUVAR _fish_abbr_ksysrmsvcl:kubectl\x20\x2d\x2dnamespace\x3dkube\x2dsystem\x20
 SETUVAR _fish_abbr_ksysrun:kubectl\x20\x2d\x2dnamespace\x3dkube\x2dsystem\x20run\x20\x2d\x2drm\x20\x2d\x2drestart\x3dNever\x20\x2d\x2dimage\x2dpull\x2dpolicy\x3dIfNotPresent\x20\x2di\x20\x2dt
 SETUVAR _fish_abbr_tf:terraform
 SETUVAR _fish_abbr_tfw:tfwrapper
+SETUVAR _fish_abbr_tg:terragrunt
 SETUVAR _fish_abbr_unfuck_2D_the_2D_cluster:kubectl\x20delete\x20clusterrolebinding\x20rb\x2dadmin\x2denrico
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
