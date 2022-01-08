@@ -23,5 +23,10 @@ fish_ssh_agent
 # JAVA FTW
 set -gx JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
+# Firefox wayland fix
+set -gx MOZ_ENABLE_WAYLAND 1
+# Zoom wayland fix
+set -gx QT_QPA_PLATFORM wayland-egl
+
 # Enable shell magic, must be last
 # starship init fish | source

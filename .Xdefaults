@@ -36,3 +36,9 @@ URxvt*font: xft:dejavusansmono:size=11
 ! white
 *.color7:       #b7b8b9
 *.color15:      #fcfdfe
+#include ".Xresources.d/rxvt-unicode"
+#include ".Xresources.d/darcula-dark"
+
+XTerm*faceName: DejaVu Sans Mono for Powerline 
+Xcursor.size: 16
+Xft.dpi: 196
