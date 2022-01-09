@@ -1,6 +1,6 @@
 #include ".Xresources.d/rxvt-unicode"
 #include ".Xresources.d/darcula-dark"
 
-XTerm*faceName: DejaVu Sans Mono for Powerline 
-Xcursor.size: 16
-Xft.dpi: 196
+#XTerm*faceName: DejaVu Sans Mono for Powerline 
+#Xcursor.size: 16
+#Xft.dpi: 196

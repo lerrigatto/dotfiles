@@ -1,4 +1,4 @@
-URxvt*font: xft:dejavusansmono:size=11
+#URxvt*font: xft:dejavusansmono:size=11
 
 ! special
 *.foreground:   #b7b8b9
@@ -39,6 +39,6 @@ URxvt*font: xft:dejavusansmono:size=11
 #include ".Xresources.d/rxvt-unicode"
 #include ".Xresources.d/darcula-dark"
 
-XTerm*faceName: DejaVu Sans Mono for Powerline 
-Xcursor.size: 16
-Xft.dpi: 196
+#XTerm*faceName: DejaVu Sans Mono for Powerline 
+#Xcursor.size: 16
+#Xft.dpi: 196
