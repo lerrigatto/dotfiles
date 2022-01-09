@@ -27,6 +27,9 @@ set -gx JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 set -gx MOZ_ENABLE_WAYLAND 1
 # Zoom wayland fix
 set -gx QT_QPA_PLATFORM wayland-egl
+# Intellij wayland fix
+set -gx export _JAVA_AWT_WM_NONREPARENTING 1
+
 
 # Enable shell magic, must be last
 # starship init fish | source
