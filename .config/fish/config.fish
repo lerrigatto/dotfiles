@@ -28,8 +28,11 @@ set -gx MOZ_ENABLE_WAYLAND 1
 # Zoom wayland fix
 set -gx QT_QPA_PLATFORM wayland-egl
 # Intellij wayland fix
-set -gx export _JAVA_AWT_WM_NONREPARENTING 1
-
+set -gx _JAVA_AWT_WM_NONREPARENTING 1
+# XDG fix
+set -gx SDL_VIDEODRIVER wayland
+set -gx XDG_CURRENT_DESKTOP sway
+set -gx XDG_SESSION_DESKTOP sway
 
 # Enable shell magic, must be last
 # starship init fish | source
