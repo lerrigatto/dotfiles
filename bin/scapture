@@ -1,0 +1,6 @@
+#! /bin/bash
+
+echo "killing wf-recorder"
+pkill wf-recorder
+echo "running wf-recorder mute"
+wf-recorder --muxer=v4l2 --codec=rawvideo --pixel-format=yuv420p --file=/dev/video4 2>/dev/null 1>&2 &
