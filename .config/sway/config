@@ -22,7 +22,7 @@ set $term x-terminal-emulator
 set $menu fish -c "wofi --show run"
 
 # Lock screen command
-set $locker "swaylock -f -c 000000"
+set $locker "swaylock -f -c 9569BE"
 
 ### Dbus mess because we can't have nice things on linux
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK

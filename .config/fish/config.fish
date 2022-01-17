@@ -34,5 +34,8 @@ set -gx SDL_VIDEODRIVER wayland
 set -gx XDG_CURRENT_DESKTOP sway
 set -gx XDG_SESSION_DESKTOP sway
 
+# Enable zoxide
+zoxide init fish | source
+
 # Enable shell magic, must be last
 # starship init fish | source
