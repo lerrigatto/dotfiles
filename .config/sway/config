@@ -46,6 +46,10 @@ output DP-1 pos 0 0
 # Position laptop monitor down
 output eDP-1 pos 0 1080
 
+# Default workspace per monitor:
+workspace 1 output DP-1
+workspace 9 output eDP-1
+
 ### Idle configuration
 #
 # Example configuration:
@@ -75,16 +79,16 @@ output eDP-1 pos 0 1080
 
 
 # Startup
-exec_always --no-startup-id waybar
+exec --no-startup-id waybar
 exec --no-startup-id nm-applet --indicator
 
 
 ### Float conf
 # To be checked if works
 # Enable floating stuff
-for_window [floating] resize set 1000 900, move position center
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="task_dialog"] floating enable
+# for_window [floating] resize set 1000 900, move position center
+# for_window [window_role="pop-up"] floating enable
+# for_window [window_role="task_dialog"] floating enable
 
 
 # Gaps
