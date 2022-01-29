@@ -25,10 +25,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #222
 background-alt = #444
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
 primary = #ffb52a
@@ -36,9 +34,9 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/bottom1]
-monitor = ${env:MONITOR:HDMI-0}
+monitor = ${env:MONITOR:eDP-1}
 width = 100%
-height = 60
+height = 30
 offset-x = 0 
 offset-y = 0
 radius = 0
@@ -62,10 +60,10 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=60;2
-font-1 = unifont:fontformat=truetype:size=30:antialias=true;0
-font-2 = siji:scale=40;
-font-3 = NotoEmoji:scale=30;
+font-0 = fixed;
+font-1 = unifont:fontformat=truetype:size=10:antialias=true;
+font-2 = siji;
+font-3 = NotoEmoji;
 
 modules-left = i3
 ;modules-center =  
@@ -78,8 +76,6 @@ tray-padding = 2
 ;wm-restack = i3
 
 ;override-redirect = true
-
-
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
