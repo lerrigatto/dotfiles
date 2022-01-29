@@ -24,15 +24,15 @@ fish_ssh_agent
 set -gx JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
 # Firefox wayland fix
-set -gx MOZ_ENABLE_WAYLAND 1
+#set -gx MOZ_ENABLE_WAYLAND 1
 # Zoom wayland fix
-set -gx QT_QPA_PLATFORM wayland-egl
+#set -gx QT_QPA_PLATFORM wayland-egl
 # Intellij wayland fix
-set -gx _JAVA_AWT_WM_NONREPARENTING 1
+#set -gx _JAVA_AWT_WM_NONREPARENTING 1
 # XDG fix
-set -gx SDL_VIDEODRIVER wayland
-set -gx XDG_CURRENT_DESKTOP sway
-set -gx XDG_SESSION_DESKTOP sway
+#set -gx SDL_VIDEODRIVER wayland
+#set -gx XDG_CURRENT_DESKTOP sway
+#set -gx XDG_SESSION_DESKTOP sway
 
 # Enable zoxide
 zoxide init fish | source
