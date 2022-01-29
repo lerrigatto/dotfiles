@@ -202,8 +202,8 @@ bindsym $mod+g exec "~/bin/gtd"
 exec --no-startup-id "~/.screenlayout/default.sh"
 
 # Assign workspaces
-workspace 1 output HDMI-0 
-workspace 9 output DP-1
+workspace 1 output DP-1 
+workspace 9 output eDP-1
 
 # Make xmessage always floating
 for_window [class="Xmessage"] floating enable
