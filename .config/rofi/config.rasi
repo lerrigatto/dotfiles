@@ -1,4 +1,4 @@
 configuration {
-  font: "DejaVu 20";
+  font: "DejaVu 12";
   theme: "solarized";
   }
