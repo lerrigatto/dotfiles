@@ -202,7 +202,8 @@ bindsym $mod+g exec "~/bin/gtd"
 exec --no-startup-id "~/.screenlayout/default.sh"
 
 # Assign workspaces
-workspace 1 output DP-1 
+#workspace 1 output DP-2 
+#workspace 2 output DP-1 
 workspace 9 output eDP-1
 
 # Make xmessage always floating
