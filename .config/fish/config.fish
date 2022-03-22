@@ -39,3 +39,6 @@ zoxide init fish | source
 
 # Enable shell magic, must be last
 # starship init fish | source
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+
