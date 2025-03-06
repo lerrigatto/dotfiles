@@ -4,17 +4,6 @@
 	excludesfile = ~/.gitignore_global
 [diff]
 	submodule = log
-[user]
-	name = Enrico La Cava
-	email = enrico.lacava@flex.ai
-[commit]
-	gpgsign = false
-[filesystem "Debian|11.0.6|/dev/mapper/pinkladydeb--VG-pinkladydeb--LV"]
-	timestampResolution = 11000 nanoseconds
-	minRacyThreshold = 6337 microseconds
-[filesystem "JetBrains s.r.o|11.0.6|/dev/mapper/pinkladydeb--VG-pinkladydeb--LV"]
-	timestampResolution = 11000 nanoseconds
-	minRacyThreshold = 7441 microseconds
 [status]
   submoduleSummary = true
 [url "ssh://git@github.com/"]
@@ -23,3 +12,6 @@
 	rebase = true
 [init]
 	defaultBranch = main
+[user]
+	name = Enrico La Cava
+	email = enrico.lacava@flex.ai
