@@ -1,12 +1,12 @@
 [push]
 	default = current
 [core]
-	excludesfile = /home/elacava/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [diff]
 	submodule = log
 [user]
-	name = Enrico <lerrigatto> La Cava
-	email = me@lerrigatto.com
+	name = Enrico La Cava
+	email = enrico.lacava@flex.ai
 [commit]
 	gpgsign = false
 [filesystem "Debian|11.0.6|/dev/mapper/pinkladydeb--VG-pinkladydeb--LV"]
