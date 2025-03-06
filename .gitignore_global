@@ -5,3 +5,5 @@ ansible.vault
 venv/
 .rakeTasks
 **.iml
+**.bin
+.vscode
