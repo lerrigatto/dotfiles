@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-set -euo pipefail
 
 # Description: Script to install all configurations for Github Codespaces
 
