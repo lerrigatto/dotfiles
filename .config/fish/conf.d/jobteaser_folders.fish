@@ -1,5 +1,0 @@
-abbr -a cdj 'cd /home/elacava/dev/jobteaser/'
-abbr -a cds 'cd /home/elacava/dev/jobteaser/stack'
-abbr -a cdsh 'cd /home/elacava/dev/jobteaser/stack-helm'
-abbr -a cdsk 'cd /home/elacava/dev/jobteaser/stack-k8s'
-abbr -a cdt 'cd /home/elacava/dev/jobteaser/terraform-jt-cloud-stack'
