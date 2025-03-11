@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -x
+
 # Description: Script to install all configurations for Github Codespaces
 
 # Function to install kubectx and kubens
@@ -27,7 +29,8 @@ install_git_ignore() {
 # Function to install fish configuration
 install_fish_config() {
     echo "Installing fish configuration..."
-    cp -r .config/fish ~/.config/fish
+    mkdir ~/.config/fish
+    cp -arv .config/fish/* ~/.config/fish
     echo "fish configuration installed."
 }
 
