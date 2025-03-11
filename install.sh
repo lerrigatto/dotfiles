@@ -30,9 +30,11 @@ install_git_ignore() {
 install_fish_config() {
     echo "Installing fish configuration..."
     mkdir ~/.config/fish
-    curl -fsSL https://starship.rs/install.sh | sh
-    curl -L https://get.oh-my.fish | fish
-    cp -arv .config/fish/* ~/.config/fish
+    curl -fsSL https://starship.rs/install.sh | sh -s -- -b ~/.local/bin --yes
+    curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
+    fish install --noninteractive 
+    rm install
+    cp -rv .config/fish/* ~/.config/fish
     echo "fish configuration installed."
 }
 
