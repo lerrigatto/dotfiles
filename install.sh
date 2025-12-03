@@ -30,7 +30,8 @@ install_git_ignore() {
 install_fish_config() {
     echo "Installing fish configuration..."
     mkdir ~/.config/fish
-    curl -fsSL https://starship.rs/install.sh | sh -s -- --yes --verbose 
+    # Disable starship install because breaks python venv environments
+    # curl -fsSL https://starship.rs/install.sh | sh -s -- --yes --verbose 
     curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
     fish install --noninteractive 
     rm install
