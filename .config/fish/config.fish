@@ -1,3 +1,4 @@
 set LC_ALL en_US.UTF-8
 
-starship init fish | source
+# Disabled because breaks with python venv with a `set -f` unknown option error.
+# starship init fish | source
