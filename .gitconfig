@@ -13,4 +13,11 @@
 	defaultBranch = main
 [user]
 	name = Enrico La Cava
-	email = enrico.lacava@flex.ai
+	email = enrico@automationrise.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP3Bu9SZR80/JsIN0k6VcLq2rIPSBGJxpC/r8jM2Gr0r
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
